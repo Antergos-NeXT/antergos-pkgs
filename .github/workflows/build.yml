@@ -22,7 +22,8 @@ jobs:
           python-yaml \
           git \
           sudo \
-          base-devel
+          base-devel \
+          debugedit
 
     - name: Create builder user
       run: |
