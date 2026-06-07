@@ -34,14 +34,14 @@ jobs:
 
     - name: Set up repo
       run: |
-        mkdir -p x86_64
-        cp /tmp/pkgout/*.pkg.tar.zst x86_64/
-        cd x86_64
+        mkdir -p repo
+        cp /tmp/pkgout/*.pkg.tar.zst repo/
+        cd repo
         repo-add antergos-pkgs.db.tar.gz *.pkg.tar.zst
 
     - name: Deploy to Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./x86_64
+        publish_dir: ./repo
         keep_files: false

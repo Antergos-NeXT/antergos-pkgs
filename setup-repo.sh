@@ -15,7 +15,7 @@ if ! grep -q "\[antergos-pkgs\]" /etc/pacman.conf; then
 
 [antergos-pkgs]
 SigLevel = Optional TrustAll
-Server = https://Antergos-NeXT.github.io/antergos-pkgs/x86_64
+Server = https://Antergos-NeXT.github.io/antergos-pkgs/
 CONF
     echo "Added antergos-pkgs to pacman.conf"
 else
