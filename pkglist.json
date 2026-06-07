@@ -1,18 +1,14 @@
 [
   {
-    "name": "yay-12.6.0-1-x86_64.pkg.tar.zst",
-    "size": 4294934
-  },
-  {
-    "name": "yay-debug-12.6.0-1-x86_64.pkg.tar.zst",
-    "size": 4238431
-  },
-  {
     "name": "antergos-wallpapers-0.7-4-any.pkg.tar.zst",
-    "size": 5780873
+    "size": 5780872
   },
   {
     "name": "downgrade-12.0.2-1-any.pkg.tar.zst",
-    "size": 30929
+    "size": 30901
+  },
+  {
+    "name": "yay-12.6.0-1-x86_64.pkg.tar.zst",
+    "size": 4294920
   }
 ]
