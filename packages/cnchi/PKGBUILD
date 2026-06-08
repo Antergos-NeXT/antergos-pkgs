@@ -31,7 +31,10 @@ depends=(
   'upower'
   'gocryptfs'
   'iso-codes'
-  'python-libnacl'
+  'webkit2gtk-4.1'
+)
+optdepends=(
+  'python-libnacl: Lembrame Gnome extensions installer support (pip install)'
 )
 makedepends=('git')
 install=cnchi.install
