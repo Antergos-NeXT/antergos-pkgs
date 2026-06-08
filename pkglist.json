@@ -1,14 +1,18 @@
 [
   {
     "name": "antergos-wallpapers-0.7-4-any.pkg.tar.zst",
-    "size": 5780868
+    "size": 5780824
+  },
+  {
+    "name": "cnchi-0.16.51-1-any.pkg.tar.zst",
+    "size": 6028922
   },
   {
     "name": "downgrade-12.0.2-1-any.pkg.tar.zst",
-    "size": 30892
+    "size": 30911
   },
   {
     "name": "yay-12.6.0-1-x86_64.pkg.tar.zst",
-    "size": 4294939
+    "size": 4294935
   }
 ]
