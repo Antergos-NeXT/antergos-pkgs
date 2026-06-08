@@ -1,0 +1,8 @@
+post_install() {
+  pacman-key --init 2>/dev/null || true
+  pacman-key --populate antergos-next 2>/dev/null || true
+}
+
+post_upgrade() {
+  post_install
+}

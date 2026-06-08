@@ -2,4 +2,6 @@ packages:
   - antergos-wallpapers
   - yay
   - downgrade
+  - antergos-next-keyring
+  - antergos-next-mirrorlist
   - cnchi
