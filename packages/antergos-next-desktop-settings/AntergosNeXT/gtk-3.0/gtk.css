@@ -1,0 +1,397 @@
+/* Antergos NeXT GTK3 Theme */
+/* Dark theme with blue accent (#2EA3F2) */
+
+@define-color bg_color #232629;
+@define-color fg_color #eff0f1;
+@define-color base_color #1d1f21;
+@define-color text_color #eff0f1;
+@define-color selected_bg_color #2EA3F2;
+@define-color selected_fg_color #ffffff;
+@define-color tooltip_bg_color #31363b;
+@define-color tooltip_fg_color #eff0f1;
+@define-color borders #3f4347;
+@define-color borders_edge #1a1c1e;
+@define-color link_color #2EA3F2;
+@define-color warning_color #fbbc15;
+@define-color error_color #ed1515;
+@define-color success_color #11d116;
+@define-color insensitive_bg_color #2a2d2f;
+@define-color insensitive_fg_color #6e7175;
+@define-color insensitive_borders #2a2d2f;
+
+* {
+    background-clip: padding-box;
+    -GtkToolButton-icon-spacing: 4;
+    -GtkTextView-error-underline-color: @error_color;
+    -GtkScrolledWindow-scrollbar-spacing: 0;
+    -GtkToolItemGroup-expander-size: 11;
+    -GtkTreeView-expander-size: 11;
+    -GtkTreeView-horizontal-separator: 4;
+    -GtkWidget-text-handle: 1;
+    -GtkWidget-focus-padding: 0;
+    -GtkWidget-focus-line-width: 1;
+    -GtkWidget-link-color: @link_color;
+    -GtkWidget-visited-link-color: shade(@link_color, 0.8);
+    -GtkWindow-resize-grip-height: 0;
+    -WnckTasklist-fade-overlay-rect: 0;
+    outline-color: alpha(@selected_bg_color, 0.5);
+    outline-style: dashed;
+    outline-offset: -3px;
+}
+
+*:disabled {
+    color: @insensitive_fg_color;
+    text-shadow: none;
+}
+
+.background {
+    color: @fg_color;
+    background-color: @bg_color;
+}
+
+/* Apply accent to selection */
+*:selected,
+*:selected:focus {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+/* Links */
+*:link {
+    color: @link_color;
+}
+
+*:visited {
+    color: shade(@link_color, 0.8);
+}
+
+/* Windows */
+window {
+    background-color: @bg_color;
+}
+
+/* Header bars / Titlebars */
+headerbar {
+    background-color: #1d1f21;
+    color: @fg_color;
+    border-bottom: 1px solid @borders;
+    padding: 0 6px;
+}
+
+headerbar:backdrop {
+    background-color: #1d1f21;
+}
+
+/* Toolbars */
+toolbar {
+    background-color: @bg_color;
+    border-style: none;
+    padding: 4px;
+}
+
+/* Menu bar */
+menubar {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+menubar > menuitem:hover {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+/* Menus */
+menu {
+    background-color: @bg_color;
+    color: @fg_color;
+    border: 1px solid @borders;
+}
+
+menu > menuitem:hover {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+/* Buttons */
+button {
+    background-color: #31363b;
+    color: @fg_color;
+    border: 1px solid @borders;
+    border-radius: 3px;
+    padding: 4px 8px;
+    transition: all 0.1s ease;
+}
+
+button:hover {
+    background-color: #3f4347;
+    border-color: shade(@borders, 1.2);
+}
+
+button:active,
+button:checked {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+button.suggested-action {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+    font-weight: bold;
+}
+
+button.suggested-action:hover {
+    background-color: shade(@selected_bg_color, 1.1);
+}
+
+button.destructive-action {
+    background-color: @error_color;
+    color: @selected_fg_color;
+}
+
+/* Entry fields */
+entry {
+    background-color: @base_color;
+    color: @text_color;
+    border: 1px solid @borders;
+    border-radius: 3px;
+    padding: 4px 8px;
+}
+
+entry:focus {
+    border-color: @selected_bg_color;
+}
+
+/* Notebooks / Tabs */
+notebook {
+    background-color: @bg_color;
+}
+
+notebook tab {
+    background-color: shade(@bg_color, 0.9);
+    border: 1px solid @borders;
+    padding: 6px 12px;
+}
+
+notebook tab:checked {
+    background-color: @bg_color;
+    border-bottom-color: @bg_color;
+}
+
+/* Tree views / Lists */
+treeview {
+    background-color: @base_color;
+    color: @text_color;
+}
+
+treeview:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+list {
+    background-color: @base_color;
+}
+
+list row:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+/* Scrollbars */
+scrollbar {
+    background-color: @bg_color;
+    border: none;
+}
+
+scrollbar slider {
+    background-color: @borders;
+    border-radius: 6px;
+    min-width: 8px;
+    min-height: 8px;
+}
+
+scrollbar slider:hover {
+    background-color: @selected_bg_color;
+}
+
+scrollbar slider:active {
+    background-color: shade(@selected_bg_color, 0.8);
+}
+
+/* Progress bars */
+progressbar {
+    background-color: @borders;
+    border-radius: 3px;
+}
+
+progressbar progress {
+    background-color: @selected_bg_color;
+    border-radius: 3px;
+}
+
+/* Switches */
+switch {
+    background-color: @borders;
+    border-radius: 12px;
+}
+
+switch:checked {
+    background-color: @selected_bg_color;
+}
+
+switch slider {
+    background-color: @fg_color;
+    border-radius: 12px;
+}
+
+/* Tooltips */
+tooltip {
+    background-color: @tooltip_bg_color;
+    color: @tooltip_fg_color;
+    border: 1px solid @borders;
+    border-radius: 3px;
+}
+
+/* Spin buttons */
+spinbutton {
+    background-color: @base_color;
+}
+
+spinbutton:focus {
+    border-color: @selected_bg_color;
+}
+
+/* Combo boxes */
+combobox {
+    background-color: @base_color;
+}
+
+/* Paned */
+paned > separator {
+    background-color: @borders;
+}
+
+/* Infobar */
+infobar {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+/* Frame */
+frame {
+    border: 1px solid @borders;
+}
+
+/* Status bar */
+statusbar {
+    background-color: @bg_color;
+    color: @fg_color;
+}
+
+/* Assistant / Dialog */
+.dialog-vbox {
+    background-color: @bg_color;
+}
+
+/* Action bar */
+actionbar {
+    background-color: @bg_color;
+    border-top: 1px solid @borders;
+}
+
+/* Colors for GtkInfoBar */
+.info {
+    background-color: @selected_bg_color;
+}
+
+.warning {
+    background-color: @warning_color;
+    color: @base_color;
+}
+
+.question {
+    background-color: @selected_bg_color;
+}
+
+.error {
+    background-color: @error_color;
+}
+
+/* Level bar */
+levelbar block {
+    background-color: @selected_bg_color;
+}
+
+levelbar block:disabled {
+    background-color: @insensitive_bg_color;
+}
+
+levelbar block.low {
+    background-color: @warning_color;
+}
+
+levelbar block.high {
+    background-color: @success_color;
+}
+
+levelbar block.full {
+    background-color: @success_color;
+}
+
+levelbar block.empty {
+    background-color: @borders;
+}
+
+/* Calendar */
+calendar {
+    background-color: @base_color;
+    color: @text_color;
+}
+
+calendar:selected {
+    background-color: @selected_bg_color;
+    color: @selected_fg_color;
+}
+
+calendar.header {
+    background-color: @bg_color;
+}
+
+calendar.button {
+    background-color: @bg_color;
+}
+
+/* Scale / Sliders */
+scale {
+    min-height: 20px;
+}
+
+scale trough {
+    background-color: @borders;
+    border-radius: 3px;
+}
+
+scale highlight {
+    background-color: @selected_bg_color;
+    border-radius: 3px;
+}
+
+scale slider {
+    background-color: @fg_color;
+    border-radius: 50%;
+    min-width: 16px;
+    min-height: 16px;
+}
+
+/* Check buttons and radio buttons */
+check,
+radio {
+    background-color: @base_color;
+    border: 1px solid @borders;
+}
+
+check:checked,
+radio:checked {
+    background-color: @selected_bg_color;
+    border-color: @selected_bg_color;
+}

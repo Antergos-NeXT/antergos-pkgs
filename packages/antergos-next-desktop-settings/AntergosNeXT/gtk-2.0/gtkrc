@@ -1,0 +1,59 @@
+gtk-color-scheme = "base_color:#1d1f21\nfg_color:#eff0f1\ntooltip_fg_color:#eff0f1\nselected_bg_color:#2EA3F2\nselected_fg_color:#ffffff\ntext_color:#eff0f1\nbg_color:#232629\ntooltip_bg_color:#31363b\nlink_color:#2EA3F2"
+
+gtk-font-name = "Noto Sans 10"
+gtk-icon-theme-name = "breeze-dark"
+gtk-cursor-theme-name = "breeze_cursors"
+gtk-theme-name = "AntergosNeXT"
+gtk-fallback-icon-theme = "breeze-dark"
+gtk-toolbar-style = GTK_TOOLBAR_BOTH_HORIZ
+gtk-menu-images = 1
+gtk-button-images = 1
+gtk-enable-event-sounds = 0
+gtk-enable-input-feedback-sounds = 0
+gtk-xft-antialias = 1
+gtk-xft-hinting = 1
+gtk-xft-hintstyle = "hintfull"
+gtk-xft-rgba = "rgb"
+gtk-application-prefer-dark-theme = 1
+
+style "user-font" {
+    font_name = "Noto Sans 10"
+}
+widget_class "*" style "user-font"
+
+style "default-bg" {
+    bg[NORMAL] = "#232629"
+    bg[PRELIGHT] = "#31363b"
+    bg[SELECTED] = "#2EA3F2"
+    bg[ACTIVE] = "#2EA3F2"
+    bg[INSENSITIVE] = "#2a2d2f"
+    fg[NORMAL] = "#eff0f1"
+    fg[PRELIGHT] = "#eff0f1"
+    fg[SELECTED] = "#ffffff"
+    fg[ACTIVE] = "#2EA3F2"
+    fg[INSENSITIVE] = "#6e7175"
+    base[NORMAL] = "#1d1f21"
+    base[PRELIGHT] = "#1d1f21"
+    base[SELECTED] = "#2EA3F2"
+    base[ACTIVE] = "#2EA3F2"
+    base[INSENSITIVE] = "#1d1f21"
+    text[NORMAL] = "#eff0f1"
+    text[PRELIGHT] = "#eff0f1"
+    text[SELECTED] = "#ffffff"
+    text[ACTIVE] = "#2EA3F2"
+    text[INSENSITIVE] = "#6e7175"
+}
+widget_class "*" style "default-bg"
+
+style "button-bg" = "default-bg" {
+    bg[NORMAL] = "#31363b"
+    bg[PRELIGHT] = "#3f4347"
+}
+widget_class "*Button*" style "button-bg"
+
+style "entry-bg" = "default-bg" {
+    base[NORMAL] = "#1d1f21"
+    base[PRELIGHT] = "#1d1f21"
+    text[NORMAL] = "#eff0f1"
+}
+widget_class "*Entry*" style "entry-bg"

@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Antergos NeXT
+Comment=Antergos NeXT custom theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=AntergosNeXT
+MetacityTheme=AntergosNeXT
+IconTheme=breeze-dark
+CursorTheme=breeze_cursors
+
+[GTK 3.0]
+Modules=color-renderer
