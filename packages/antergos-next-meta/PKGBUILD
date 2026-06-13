@@ -1,0 +1,99 @@
+# Maintainer: Celestia Ludenberg <ash8820@proton.me>
+# Contributor: Antergos NeXT Team
+
+pkgname=(antergos-next-common antergos-next-graphic antergos-next-base antergos-next-gnome antergos-next-cinnamon antergos-next-xfce antergos-next-mate antergos-next-openbox antergos-next-kde antergos-next-deepin antergos-next-lxqt antergos-next-enlightenment antergos-next-budgie antergos-next-i3)
+pkgver=1
+pkgrel=1
+pkgdesc="Antergos NeXT meta-packages for desktop environments"
+arch=('any')
+url="https://github.com/Antergos-NeXT/antergos-pkgs"
+license=('GPL3')
+depends=()
+makedepends=()
+source=()
+sha256sums=()
+
+package_antergos-next-common() {
+  pkgdesc="Packages common to all desktop environments and base"
+  depends=(
+    acpid alsa-utils base base-devel bash-completion bind-tools crda cryfs dosfstools haveged htop gzip intel-ucode mlocate modemmanager net-tools networkmanager ntfs-3g openssh pkgfile reflector screenfetch sudo terminus-font tar unzip unrar usb_modeswitch wget whois wireless_tools
+  )
+}
+package_antergos-next-graphic() {
+  pkgdesc="Packages common to all graphical desktop environments"
+  depends=(
+    accountsservice antergos-wallpapers cdrtools dconf-editor ffmpegthumbnailer gst-libav gst-plugins-bad gst-plugins-base gst-plugins-good gst-plugins-ugly libdvdcss lightdm lightdm-webkit2-greeter light-locker mesa pavucontrol pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber ttf-bitstream-vera ttf-dejavu ttf-liberation upower xf86-input-libinput xf86-video-fbdev xf86-video-vesa xorg-bdftopcf xorg-iceauth xorg-mkfontscale xorg-sessreg xorg-setxkbmap xorg-smproxy xorg-x11perf xorg-xauth xorg-xbacklight xorg-xcmsdb xorg-xcursorgen xorg-xdpyinfo xorg-xdriinfo xorg-xev xorg-xgamma xorg-xhost xorg-xinput xorg-xkbcomp xorg-xkbevd xorg-xkbutils xorg-xkill xorg-xlsatoms xorg-xlsclients xorg-xmodmap xorg-xpr xorg-xprop xorg-xrandr xorg-xrdb xorg-xrefresh xorg-xset xorg-xsetroot xorg-xvinfo xorg-xwd xorg-xwininfo xorg-xwud xorg-font-util xorg-fonts-encodings xorg-server xorg-xinit
+  )
+}
+package_antergos-next-base() {
+  pkgdesc="Base command-line only system"
+  depends=(
+    cabextract bzip2 dialog rsync sharutils
+  )
+}
+package_antergos-next-gnome() {
+  pkgdesc="Gnome desktop"
+  depends=(
+    baobab decibels epiphany gdm gnome-backgrounds gnome-calculator gnome-calendar gnome-characters gnome-clocks gnome-color-manager gnome-connections gnome-console gnome-contacts gnome-control-center gnome-disk-utility gnome-font-viewer gnome-keyring gnome-logs gnome-maps gnome-menus gnome-music gnome-remote-desktop gnome-session gnome-settings-daemon gnome-shell gnome-software gnome-system-monitor gnome-text-editor gnome-tour gnome-user-docs gnome-user-share gnome-weather grilo-plugins gst-thumbnailers gvfs gvfs-afc gvfs-dnssd gvfs-goa gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-onedrive gvfs-smb gvfs-wsdd loupe malcontent nautilus orca papers rygel showtime simple-scan snapshot sushi tecla xdg-desktop-portal-gnome xdg-user-dirs-gtk yelp
+  )
+}
+package_antergos-next-cinnamon() {
+  pkgdesc="Cinnamon desktop"
+  depends=(
+    cinnamon cinnamon-translations cinnamon-screensaver cinnamon-menus nemo nemo-fileroller cinnamon-control-center cinnamon-session cinnamon-settings-daemon muffin cjs gjs xed xreader xviewer lightdm-slick-greeter
+  )
+}
+package_antergos-next-xfce() {
+  pkgdesc="XFCE desktop"
+  depends=(
+    exo garcon thunar thunar-volman tumbler xfce4-appfinder xfce4-panel xfce4-power-manager xfce4-session xfce4-settings xfce4-terminal xfconf xfdesktop xfwm4 mousepad parole ristretto thunar-archive-plugin thunar-media-tags-plugin xfburn xfce4-battery-plugin xfce4-clipman-plugin xfce4-cpufreq-plugin xfce4-cpugraph-plugin xfce4-dict xfce4-diskperf-plugin xfce4-eyes-plugin xfce4-fsguard-plugin xfce4-genmon-plugin xfce4-mailwatch-plugin xfce4-mount-plugin xfce4-mpc-plugin xfce4-netload-plugin xfce4-notes-plugin xfce4-notifyd xfce4-places-plugin xfce4-pulseaudio-plugin xfce4-screensaver xfce4-screenshooter xfce4-sensors-plugin xfce4-smartbookmark-plugin xfce4-systemload-plugin xfce4-taskmanager xfce4-time-out-plugin xfce4-timer-plugin xfce4-verve-plugin xfce4-wavelan-plugin xfce4-weather-plugin xfce4-whiskermenu-plugin xfce4-xkb-plugin
+  )
+}
+package_antergos-next-mate() {
+  pkgdesc="Mate desktop"
+  depends=(
+    caja marco mate-backgrounds mate-control-center mate-desktop mate-icon-theme mate-menus mate-notification-daemon mate-panel mate-polkit mate-session-manager mate-settings-daemon mate-themes mate-user-guide atril caja-actions caja-audio-video-properties caja-image-converter caja-open-terminal caja-sendto caja-share caja-wallpaper caja-xattr-tags engrampa eom mate-applets mate-calc mate-icon-theme-faenza mate-media mate-netbook mate-power-manager mate-screensaver mate-sensors-applet mate-system-monitor mate-terminal mate-user-share mate-utils mozo pluma
+  )
+}
+package_antergos-next-openbox() {
+  pkgdesc="Openbox window manager"
+  depends=(
+    openbox obconf-qt tint2 picom feh lxappearance
+  )
+}
+package_antergos-next-kde() {
+  pkgdesc="KDE desktop"
+  depends=(
+    aurorae bluedevil breeze breeze-cursors breeze-gtk breeze-plymouth discover drkonqi flatpak-kcm kactivitymanagerd kde-cli-tools kde-gtk-config kdecoration kdeplasma-addons kgamma kglobalacceld kinfocenter kmenuedit knighttime kpipewire krdp kscreen kscreenlocker ksshaskpass ksystemstats kwallet-pam kwayland kwin kwin-x11 kwrited layer-shell-qt libkscreen libksysguard libplasma milou ocean-sound-theme oxygen oxygen-cursors oxygen-sounds plasma-activities plasma-activities-stats plasma-browser-integration plasma-desktop plasma-disks plasma-firewall plasma-integration plasma-keyboard plasma-login-manager plasma-nm plasma-pa plasma-sdk plasma-systemmonitor plasma-thunderbolt plasma-vault plasma-welcome plasma-workspace plasma-workspace-wallpapers plasma5support plymouth-kcm polkit-kde-agent powerdevil print-manager qqc2-breeze-style sddm-kcm spectacle systemsettings wacomtablet xdg-desktop-portal-kde kde-graphics-meta kde-utilities-meta kde-system-meta kde-network-meta kde-multimedia-meta
+  )
+}
+package_antergos-next-deepin() {
+  pkgdesc="Deepin desktop"
+  depends=(
+    ddm deepin-account-faces deepin-anything deepin-api deepin-app-services deepin-appearance deepin-application-manager deepin-calendar deepin-control-center deepin-daemon deepin-desktop-base deepin-desktop-schemas deepin-desktop-theme deepin-file-manager deepin-gtk-theme deepin-icon-theme deepin-image-viewer deepin-launchpad deepin-menu deepin-network-core deepin-polkit-agent deepin-polkit-agent-ext-gnomekeyring deepin-pw-check deepin-qt5integration deepin-qt5platform-plugins deepin-qt6integration deepin-qt6platform-plugins deepin-screensaver deepin-services deepin-session deepin-session-shell deepin-session-ui deepin-shell deepin-sound-theme deepin-system-monitor deepin-turbo deepin-wallpapers deepin-widgets deepin-wloutput-daemon docparser dtk6core dtk6declarative dtk6gui dtk6log dtk6widget dtkcore dtkdeclarative dtkgui dtklog dtkwidget treeland xdg-desktop-portal-dde deepin-boot-maker deepin-calculator deepin-camera deepin-clipboard deepin-compressor deepin-device-formatter deepin-draw deepin-editor deepin-font-manager deepin-gomoku deepin-grand-search deepin-lianliankan deepin-movie deepin-picker deepin-printer deepin-screen-recorder deepin-screensaver-pp deepin-terminal deepin-voice-note
+  )
+}
+package_antergos-next-lxqt() {
+  pkgdesc="LXQt desktop environment"
+  depends=(
+    lximage-qt lxqt-about lxqt-admin lxqt-archiver lxqt-config lxqt-globalkeys lxqt-menu-data lxqt-notificationd lxqt-openssh-askpass lxqt-panel lxqt-policykit lxqt-powermanagement lxqt-qtplugin lxqt-runner lxqt-session lxqt-sudo lxqt-themes obconf-qt openbox pavucontrol-qt pcmanfm-qt qps qterminal screengrab xdg-desktop-portal-lxqt
+  )
+}
+package_antergos-next-enlightenment() {
+  pkgdesc="Enlightenment desktop"
+  depends=(
+    enlightenment efl terminology
+  )
+}
+package_antergos-next-budgie() {
+  pkgdesc="Budgie desktop"
+  depends=(
+    budgie-backgrounds budgie-control-center budgie-desktop budgie-desktop-services budgie-desktop-view budgie-session gnome-terminal nautilus gnome-software lightdm-slick-greeter
+  )
+}
+package_antergos-next-i3() {
+  pkgdesc="i3 tiling window manager"
+  depends=(
+    i3-wm i3blocks i3lock i3status picom feh dmenu dunst
+  )
+}
