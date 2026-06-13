@@ -47,5 +47,5 @@ KDEEOF
 
   # dconf overrides (GNOME, Cinnamon, Budgie, Deepin)
   install -dm755 "${pkgdir}/etc/dconf/db/local.d"
-  install -m644 "${srcdir}/../pulsar-dconf" "${pkgdir}/etc/dconf/db/local.d/pulsar-next"
+  install -m644 "${srcdir}/../pulsar-dconf" "${pkgdir}/etc/dconf/db/local.d/pulsar"
 }

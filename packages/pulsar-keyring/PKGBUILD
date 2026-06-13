@@ -9,7 +9,7 @@ url="https://github.com/Pulsar-Linux/pulsar-pkgs"
 license=('GPL3')
 install=pulsar-keyring.install
 source=(
-  "pulsar-next.gpg"
+  "pulsar.gpg"
   "pulsar-trusted"
   "pulsar-revoked"
 )
@@ -17,7 +17,7 @@ sha256sums=('SKIP' 'SKIP' 'SKIP')
 
 package() {
   install -dm755 "${pkgdir}/usr/share/pacman/keyrings"
-  install -m644 "${srcdir}/pulsar-next.gpg" "${pkgdir}/usr/share/pacman/keyrings/"
+  install -m644 "${srcdir}/pulsar.gpg" "${pkgdir}/usr/share/pacman/keyrings/"
   install -m644 "${srcdir}/pulsar-trusted" "${pkgdir}/usr/share/pacman/keyrings/"
   install -m644 "${srcdir}/pulsar-revoked" "${pkgdir}/usr/share/pacman/keyrings/"
 }

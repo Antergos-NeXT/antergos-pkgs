@@ -3,6 +3,6 @@
 ## Use pacman-mirrors or rankmirrors to select fastest mirror
 
 # Flat layout (packages at repo root)
-Server = https://pulsar-next.github.io/pulsar-pkgs
+Server = https://pulsar-linux.github.io/pulsar-pkgs
 # Standard layout (packages in $repo/os/$arch/)
-Server = https://pulsar-next.github.io/pulsar-pkgs/$repo/os/$arch
+Server = https://pulsar-linux.github.io/pulsar-pkgs/$repo/os/$arch
