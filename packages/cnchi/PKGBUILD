@@ -2,14 +2,14 @@
 # Contributor: Antergos Team
 
 pkgname=cnchi
-pkgver=0.16.52
-pkgrel=2
-pkgdesc="Antergos NeXT graphical installer"
+pkgver=0.17.0
+pkgrel=1
+pkgdesc="Antergos NeXT graphical installer (GTK4)"
 arch=('any')
 url="https://github.com/Antergos-NeXT/Cnchi"
 license=('GPL3')
 depends=(
-  'gtk3'
+  'gtk4'
   'python'
   'python-cairo'
   'python-gobject'
@@ -31,14 +31,14 @@ depends=(
   'upower'
   'gocryptfs'
   'iso-codes'
-  'webkit2gtk-4.1'
+  'webkitgtk-6.0'
 )
 optdepends=(
   'python-libnacl: Lembrame Gnome extensions installer support (pip install)'
 )
 makedepends=('git')
 install=cnchi.install
-source=("${pkgname}::git+https://github.com/Antergos-NeXT/Cnchi.git#branch=0.16.x")
+source=("${pkgname}::git+https://github.com/Antergos-NeXT/Cnchi.git#branch=cnchi-dev")
 sha256sums=('SKIP')
 
 package() {
