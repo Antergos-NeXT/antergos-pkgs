@@ -15,7 +15,7 @@ if ! grep -q "\[pulsar-pkgs\]" /etc/pacman.conf; then
 
 [pulsar-pkgs]
 SigLevel = Optional TrustAll
-Server = https://Pulsar-OS.github.io/pulsar-pkgs/
+Server = https://Pulsar-Linux.github.io/pulsar-pkgs/
 CONF
     echo "Added pulsar-pkgs to pacman.conf"
 else

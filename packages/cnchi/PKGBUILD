@@ -6,7 +6,7 @@ pkgver=0.17.0
 pkgrel=1
 pkgdesc="Pulsar graphical installer (GTK4)"
 arch=('any')
-url="https://github.com/Pulsar-OS/Cnchi"
+url="https://github.com/Pulsar-Linux/Cnchi"
 license=('GPL3')
 depends=(
   'gtk4'
@@ -38,7 +38,7 @@ optdepends=(
 )
 makedepends=('git')
 install=cnchi.install
-source=("${pkgname}::git+https://github.com/Pulsar-OS/Cnchi.git#branch=cnchi-dev")
+source=("${pkgname}::git+https://github.com/Pulsar-Linux/Cnchi.git#branch=cnchi-dev")
 sha256sums=('SKIP')
 
 package() {

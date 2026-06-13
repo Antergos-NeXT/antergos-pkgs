@@ -21,7 +21,7 @@ Add to `/etc/pacman.conf`:
 ```
 [pulsar-pkgs]
 SigLevel = Optional TrustAll
-Server = https://Pulsar-OS.github.io/pulsar-pkgs/
+Server = https://Pulsar-Linux.github.io/pulsar-pkgs/
 ```
 
 Then:
@@ -34,7 +34,7 @@ pacman -S cnchi pulsar-desktop-settings
 ## Branches
 
 - `main` — package definitions, CI generates the repo
-- Cnchi sources shipped from `Pulsar-OS/Cnchi` (`0.16.x` and `cnchi-dev` branches)
+- Cnchi sources shipped from `Pulsar-Linux/Cnchi` (`0.16.x` and `cnchi-dev` branches)
 
 ## License
 

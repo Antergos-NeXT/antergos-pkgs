@@ -47,15 +47,15 @@ html = f'''<!DOCTYPE html>
     <strong>Add to /etc/pacman.conf</strong>
     <pre>[pulsar-pkgs]
 SigLevel = Optional TrustAll
-Server = https://Pulsar-OS.github.io/pulsar-pkgs/$repo/os/$arch
-Server = https://Pulsar-OS.github.io/pulsar-pkgs</pre>
+Server = https://Pulsar-Linux.github.io/pulsar-pkgs/$repo/os/$arch
+Server = https://Pulsar-Linux.github.io/pulsar-pkgs</pre>
   </div>
 
   <table>
     <tr><th>Package</th><th>Size</th></tr>
 {rows}  </table>
 
-  <footer>Pulsar &mdash; <a href="https://github.com/Pulsar-OS">github.com/Pulsar-OS</a></footer>
+  <footer>Pulsar &mdash; <a href="https://github.com/Pulsar-Linux">github.com/Pulsar-Linux</a></footer>
 </body>
 </html>'''
 
