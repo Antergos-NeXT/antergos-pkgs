@@ -1,86 +1,78 @@
 [
   {
-    "name": "antergos-next-base-1-1-any.pkg.tar.zst",
-    "size": 4746
-  },
-  {
-    "name": "antergos-next-budgie-1-1-any.pkg.tar.zst",
-    "size": 4803
-  },
-  {
-    "name": "antergos-next-cinnamon-1-1-any.pkg.tar.zst",
-    "size": 4817
-  },
-  {
-    "name": "antergos-next-common-1-1-any.pkg.tar.zst",
-    "size": 4917
-  },
-  {
-    "name": "antergos-next-deepin-1-1-any.pkg.tar.zst",
-    "size": 5181
-  },
-  {
-    "name": "antergos-next-desktop-settings-1-2-any.pkg.tar.zst",
-    "size": 8257
-  },
-  {
-    "name": "antergos-next-enlightenment-1-1-any.pkg.tar.zst",
-    "size": 4737
-  },
-  {
-    "name": "antergos-next-gnome-1-1-any.pkg.tar.zst",
-    "size": 5104
-  },
-  {
-    "name": "antergos-next-graphic-1-1-any.pkg.tar.zst",
-    "size": 5182
-  },
-  {
-    "name": "antergos-next-i3-1-1-any.pkg.tar.zst",
-    "size": 4763
-  },
-  {
-    "name": "antergos-next-kde-1-1-any.pkg.tar.zst",
-    "size": 5239
-  },
-  {
-    "name": "antergos-next-keyring-1-1-any.pkg.tar.zst",
-    "size": 4549
-  },
-  {
-    "name": "antergos-next-lxqt-1-1-any.pkg.tar.zst",
-    "size": 4892
-  },
-  {
-    "name": "antergos-next-mate-1-1-any.pkg.tar.zst",
-    "size": 4995
-  },
-  {
-    "name": "antergos-next-mirrorlist-1-1-any.pkg.tar.zst",
-    "size": 2947
-  },
-  {
-    "name": "antergos-next-openbox-1-1-any.pkg.tar.zst",
-    "size": 4756
-  },
-  {
-    "name": "antergos-next-xfce-1-1-any.pkg.tar.zst",
-    "size": 5036
-  },
-  {
-    "name": "antergos-wallpapers-0.7-4-any.pkg.tar.zst",
-    "size": 5780874
-  },
-  {
-    "name": "cnchi-0.17.0-1-any.pkg.tar.zst",
-    "size": 6158872
-  },
-  {
     "name": "downgrade-12.0.2-1-any.pkg.tar.zst",
-    "size": 30909
+    "size": 30924
+  },
+  {
+    "name": "pulsar-base-1-1-any.pkg.tar.zst",
+    "size": 4752
+  },
+  {
+    "name": "pulsar-budgie-1-1-any.pkg.tar.zst",
+    "size": 4794
+  },
+  {
+    "name": "pulsar-cinnamon-1-1-any.pkg.tar.zst",
+    "size": 4810
+  },
+  {
+    "name": "pulsar-common-1-1-any.pkg.tar.zst",
+    "size": 4923
+  },
+  {
+    "name": "pulsar-deepin-1-1-any.pkg.tar.zst",
+    "size": 5173
+  },
+  {
+    "name": "pulsar-desktop-settings-1-2-any.pkg.tar.zst",
+    "size": 8227
+  },
+  {
+    "name": "pulsar-enlightenment-1-1-any.pkg.tar.zst",
+    "size": 4727
+  },
+  {
+    "name": "pulsar-gnome-1-1-any.pkg.tar.zst",
+    "size": 5092
+  },
+  {
+    "name": "pulsar-graphic-1-1-any.pkg.tar.zst",
+    "size": 5180
+  },
+  {
+    "name": "pulsar-i3-1-1-any.pkg.tar.zst",
+    "size": 4760
+  },
+  {
+    "name": "pulsar-kde-1-1-any.pkg.tar.zst",
+    "size": 5228
+  },
+  {
+    "name": "pulsar-keyring-1-1-any.pkg.tar.zst",
+    "size": 4520
+  },
+  {
+    "name": "pulsar-lxqt-1-1-any.pkg.tar.zst",
+    "size": 4899
+  },
+  {
+    "name": "pulsar-mate-1-1-any.pkg.tar.zst",
+    "size": 5000
+  },
+  {
+    "name": "pulsar-mirrorlist-1-1-any.pkg.tar.zst",
+    "size": 2921
+  },
+  {
+    "name": "pulsar-openbox-1-1-any.pkg.tar.zst",
+    "size": 4754
+  },
+  {
+    "name": "pulsar-xfce-1-1-any.pkg.tar.zst",
+    "size": 5033
   },
   {
     "name": "yay-12.6.0-1-x86_64.pkg.tar.zst",
-    "size": 4294943
+    "size": 4294945
   }
 ]
