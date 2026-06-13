@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-echo "Setting up Antergos NeXT PKGS..."
+echo "Setting up Pulsar PKGS..."
 
 if [[ $EUID -ne 0 ]]; then
    echo "Run with sudo!"
@@ -10,18 +10,18 @@ fi
 
 cp /etc/pacman.conf /etc/pacman.conf.backup
 
-if ! grep -q "\[antergos-pkgs\]" /etc/pacman.conf; then
+if ! grep -q "\[pulsar-pkgs\]" /etc/pacman.conf; then
     cat >> /etc/pacman.conf << 'CONF'
 
-[antergos-pkgs]
+[pulsar-pkgs]
 SigLevel = Optional TrustAll
-Server = https://Antergos-NeXT.github.io/antergos-pkgs/
+Server = https://Pulsar-OS.github.io/pulsar-pkgs/
 CONF
-    echo "Added antergos-pkgs to pacman.conf"
+    echo "Added pulsar-pkgs to pacman.conf"
 else
-    echo "antergos-pkgs already in pacman.conf"
+    echo "pulsar-pkgs already in pacman.conf"
 fi
 
 pacman -Sy
 
-echo "Antergos NeXT PKGS ready!"
+echo "Pulsar PKGS ready!"

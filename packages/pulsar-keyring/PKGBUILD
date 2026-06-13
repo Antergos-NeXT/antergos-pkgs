@@ -1,0 +1,23 @@
+# Maintainer: Celestia Ludenberg <ash8820@proton.me>
+
+pkgname=pulsar-keyring
+pkgver=1
+pkgrel=1
+pkgdesc="Pulsar GPG keyring"
+arch=('any')
+url="https://github.com/Pulsar-OS/pulsar-pkgs"
+license=('GPL3')
+install=pulsar-keyring.install
+source=(
+  "pulsar-next.gpg"
+  "pulsar-trusted"
+  "pulsar-revoked"
+)
+sha256sums=('SKIP' 'SKIP' 'SKIP')
+
+package() {
+  install -dm755 "${pkgdir}/usr/share/pacman/keyrings"
+  install -m644 "${srcdir}/pulsar-next.gpg" "${pkgdir}/usr/share/pacman/keyrings/"
+  install -m644 "${srcdir}/pulsar-trusted" "${pkgdir}/usr/share/pacman/keyrings/"
+  install -m644 "${srcdir}/pulsar-revoked" "${pkgdir}/usr/share/pacman/keyrings/"
+}

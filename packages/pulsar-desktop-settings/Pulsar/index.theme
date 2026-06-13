@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Antergos NeXT
-Comment=Antergos NeXT custom theme
+Name=Pulsar
+Comment=Pulsar custom theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=AntergosNeXT
-MetacityTheme=AntergosNeXT
+GtkTheme=Pulsar
+MetacityTheme=Pulsar
 IconTheme=breeze-dark
 CursorTheme=breeze_cursors
 

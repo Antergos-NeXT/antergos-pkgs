@@ -23,7 +23,7 @@ html = f'''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>antergos-pkgs</title>
+  <title>pulsar-pkgs</title>
   <style>
     body {{ font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; background: #0e0e18; color: #e4e4f0; }}
     h1 {{ color: #e08a3c; }}
@@ -40,22 +40,22 @@ html = f'''<!DOCTYPE html>
   </style>
 </head>
 <body>
-  <h1>antergos-pkgs</h1>
-  <p>AUR package repository for Antergos NeXT</p>
+  <h1>pulsar-pkgs</h1>
+  <p>AUR package repository for Pulsar</p>
 
   <div class="usage">
     <strong>Add to /etc/pacman.conf</strong>
-    <pre>[antergos-pkgs]
+    <pre>[pulsar-pkgs]
 SigLevel = Optional TrustAll
-Server = https://Antergos-NeXT.github.io/antergos-pkgs/$repo/os/$arch
-Server = https://Antergos-NeXT.github.io/antergos-pkgs</pre>
+Server = https://Pulsar-OS.github.io/pulsar-pkgs/$repo/os/$arch
+Server = https://Pulsar-OS.github.io/pulsar-pkgs</pre>
   </div>
 
   <table>
     <tr><th>Package</th><th>Size</th></tr>
 {rows}  </table>
 
-  <footer>Antergos NeXT &mdash; <a href="https://github.com/Antergos-NeXT">github.com/Antergos-NeXT</a></footer>
+  <footer>Pulsar &mdash; <a href="https://github.com/Pulsar-OS">github.com/Pulsar-OS</a></footer>
 </body>
 </html>'''
 

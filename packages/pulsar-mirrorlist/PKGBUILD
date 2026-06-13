@@ -1,0 +1,16 @@
+# Maintainer: Celestia Ludenberg <ash8820@proton.me>
+
+pkgname=pulsar-mirrorlist
+pkgver=1
+pkgrel=1
+pkgdesc="Pulsar mirror list"
+arch=('any')
+url="https://github.com/Pulsar-OS/pulsar-pkgs"
+license=('GPL3')
+source=("pulsar-mirrorlist")
+sha256sums=('SKIP')
+
+package() {
+  install -dm755 "${pkgdir}/etc/pacman.d"
+  install -m644 "${srcdir}/pulsar-mirrorlist" "${pkgdir}/etc/pacman.d/"
+}

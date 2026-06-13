@@ -1,9 +1,9 @@
 packages:
-  - antergos-wallpapers
+  - pulsar-wallpapers
   - yay
   - downgrade
-  - antergos-next-keyring
-  - antergos-next-mirrorlist
-  - antergos-next-desktop-settings
+  - pulsar-keyring
+  - pulsar-mirrorlist
+  - pulsar-desktop-settings
   - cnchi
-  - antergos-next-meta
+  - pulsar-meta

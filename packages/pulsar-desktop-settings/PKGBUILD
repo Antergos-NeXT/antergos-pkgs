@@ -1,0 +1,51 @@
+# Maintainer: Celestia Ludenberg <ash8820@proton.me>
+
+pkgname=pulsar-desktop-settings
+pkgver=1
+pkgrel=2
+pkgdesc="Pulsar desktop settings, theme, and color scheme"
+arch=('any')
+url="https://github.com/Pulsar-OS/pulsar-pkgs"
+license=('GPL3')
+depends=(
+  'breeze-icons'
+  'breeze-gtk'
+  'ttf-opensans'
+  'noto-fonts'
+)
+source=()
+sha256sums=()
+
+package() {
+  # Custom GTK theme
+  install -dm755 "${pkgdir}/usr/share/themes/Pulsar/gtk-3.0"
+  install -dm755 "${pkgdir}/usr/share/themes/Pulsar/gtk-4.0"
+  install -dm755 "${pkgdir}/usr/share/themes/Pulsar/gtk-2.0"
+  install -m644 "${srcdir}/../Pulsar/gtk-3.0/gtk.css" "${pkgdir}/usr/share/themes/Pulsar/gtk-3.0/"
+  install -m644 "${srcdir}/../Pulsar/gtk-4.0/gtk.css" "${pkgdir}/usr/share/themes/Pulsar/gtk-4.0/"
+  install -m644 "${srcdir}/../Pulsar/gtk-2.0/gtkrc" "${pkgdir}/usr/share/themes/Pulsar/gtk-2.0/"
+  install -m644 "${srcdir}/../Pulsar/index.theme" "${pkgdir}/usr/share/themes/Pulsar/"
+
+  # KDE Color scheme
+  install -dm755 "${pkgdir}/usr/share/color-schemes"
+  install -m644 "${srcdir}/../Pulsar.colors" "${pkgdir}/usr/share/color-schemes/"
+
+  # GTK settings (for all GTK-based DEs)
+  install -dm755 "${pkgdir}/etc/skel/.config/gtk-3.0"
+  install -m644 "${srcdir}/../gtk-settings.ini" "${pkgdir}/etc/skel/.config/gtk-3.0/settings.ini"
+
+  # KDE defaults
+  install -dm755 "${pkgdir}/etc/skel/.config"
+  cat > "${pkgdir}/etc/skel/.config/kdeglobals" << 'KDEEOF'
+[General]
+ColorScheme=Pulsar
+KDEEOF
+
+  # XFCE defaults
+  install -dm755 "${pkgdir}/etc/xdg/xfce4/xfconf/xfce-perchannel-xml"
+  install -m644 "${srcdir}/../xsettings.xml" "${pkgdir}/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/"
+
+  # dconf overrides (GNOME, Cinnamon, Budgie, Deepin)
+  install -dm755 "${pkgdir}/etc/dconf/db/local.d"
+  install -m644 "${srcdir}/../pulsar-dconf" "${pkgdir}/etc/dconf/db/local.d/pulsar-next"
+}
